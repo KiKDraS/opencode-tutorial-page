@@ -27,6 +27,7 @@
   <meta name="twitter:title" content="opencode — The Open Source AI Coding Agent" />
   <meta name="twitter:description"
     content="Open source AI coding agent with free models included. Terminal-native, LSP-enabled, 75+ LLM providers, and privacy-first." />
+  <meta name="twitter:lang" content="en" />
 
   <!-- CSS Manifest -->
 
@@ -36,13 +37,13 @@
   <link rel="shortcut icon" href="/opencode-tutorial-page/favicon/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="/opencode-tutorial-page/favicon/apple-touch-icon.png" />
   <link rel="manifest" href="/opencode-tutorial-page/favicon/site.webmanifest" />
-  <script type="module" crossorigin src="/opencode-tutorial-page/assets/index-D15aGVY1.js"></script>
-  <link rel="stylesheet" crossorigin href="/opencode-tutorial-page/assets/index-C3GuvaVM.css">
+  <script type="module" crossorigin src="/opencode-tutorial-page/assets/index-h1YBvF3p.js"></script>
+  <link rel="stylesheet" crossorigin href="/opencode-tutorial-page/assets/index-CVKfS6CM.css">
 </head>
 
 <body>
   <!-- Skip to content -->
-  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <a href="#main-content" class="skip-link" data-i18n="skip.toContent">Skip to main content</a>
 
   <!-- ============================================
        HEADER / NAVIGATION
@@ -55,17 +56,26 @@
 
       <nav aria-label="Main navigation">
         <ul class="nav-links">
-          <li><a href="https://github.com/anomalyco/opencode" class="nav-link" target="_blank"
-              rel="noopener noreferrer">GitHub</a></li>
-          <li><a href="https://opencode.ai/docs" class="nav-link" target="_blank" rel="noopener noreferrer">Docs</a>
+          <li><a href="https://github.com/anomalyco/opencode" class="nav-link" target="_blank" rel="noopener noreferrer"
+              data-i18n="nav.github">GitHub</a></li>
+          <li><a href="https://opencode.ai/docs" class="nav-link" target="_blank" rel="noopener noreferrer"
+              data-i18n="nav.docs">Docs</a>
           </li>
-          <li><a href="https://discord.gg/opencode" class="nav-link" target="_blank"
-              rel="noopener noreferrer">Discord</a></li>
+          <li><a href="https://discord.gg/opencode" class="nav-link" target="_blank" rel="noopener noreferrer"
+              data-i18n="nav.discord">Discord</a></li>
+          <li>
+            <!-- Language Switcher -->
+            <button type="button" class="lang-switcher" data-lang-toggle aria-label="Switch language"
+              data-i18n-aria="lang.switcher">
+              <span class="lang-switcher__flag" aria-hidden="true"></span>
+            </button>
+          </li>
         </ul>
       </nav>
 
+
       <button type="button" class="mobile-menu-toggle" data-mobile-menu aria-expanded="false" aria-controls="mobile-nav"
-        aria-label="Open navigation menu">
+        aria-label="Open navigation menu" data-i18n-aria="nav.menuOpen">
         <span class="hamburger-line" aria-hidden="true"></span>
         <span class="hamburger-line" aria-hidden="true"></span>
         <span class="hamburger-line" aria-hidden="true"></span>
@@ -76,11 +86,19 @@
     <nav id="mobile-nav" class="mobile-nav" data-nav-panel hidden aria-label="Mobile navigation">
       <ul class="mobile-nav-links">
         <li><a href="https://github.com/anomalyco/opencode" class="mobile-nav-link" target="_blank"
-            rel="noopener noreferrer">GitHub</a></li>
-        <li><a href="https://opencode.ai/docs" class="mobile-nav-link" target="_blank"
-            rel="noopener noreferrer">Docs</a></li>
-        <li><a href="https://discord.gg/opencode" class="mobile-nav-link" target="_blank"
-            rel="noopener noreferrer">Discord</a></li>
+            rel="noopener noreferrer" data-i18n="nav.github">GitHub</a></li>
+        <li><a href="https://opencode.ai/docs" class="mobile-nav-link" target="_blank" rel="noopener noreferrer"
+            data-i18n="nav.docs">Docs</a></li>
+        <li><a href="https://discord.gg/opencode" class="mobile-nav-link" target="_blank" rel="noopener noreferrer"
+            data-i18n="nav.discord">Discord</a></li>
+        <li>
+          <!-- Language Switcher -->
+          <button type="button" class="lang-switcher lang-switcher-mobile" data-lang-toggle aria-label="Switch language"
+            data-i18n-aria="lang.switcher">
+            <span class="lang-switcher__flag" aria-hidden="true"></span>
+            <span class="lang-switcher__text" data-i18n="lang.current"></span>
+          </button>
+        </li>
       </ul>
     </nav>
   </header>
@@ -96,33 +114,36 @@
     <section class="hero" aria-labelledby="hero-heading">
       <div class="hero-inner">
         <div class="hero-content">
-          <h1 id="hero-heading" class="hero-heading glitch" data-glitch>The open source AI coding agent</h1>
-          <p class="hero-subheading">
+          <h1 id="hero-heading" class="hero-heading glitch" data-glitch data-i18n="hero.title">The open source AI coding
+            agent</h1>
+          <p class="hero-subheading" data-i18n="hero.subtitle">
             A terminal-native AI coding assistant with free models included.
             Connect any LLM, run multiple agents in parallel, and keep your code private.
           </p>
 
           <fieldset class="hero-install">
-            <legend class="sr-only">Installation command</legend>
+            <legend class="sr-only" data-i18n="hero.installLabel">Installation command</legend>
             <div class="install-oneliner">
               <span class="prompt-symbol" aria-hidden="true">$</span>
               <code>curl -fsSL https://opencode.ai/install | bash</code>
-              <button type="button" class="copy-btn" data-copy-btn aria-label="Copy install command to clipboard">
+              <button type="button" class="copy-btn" data-copy-btn aria-label="Copy install command to clipboard"
+                data-i18n-aria="hero.copyLabel">
                 <span class="copy-icon" aria-hidden="true">&#x2398;</span>
-                <span class="copy-label">Copy</span>
+                <span class="copy-label" data-i18n="install.copy">Copy</span>
               </button>
             </div>
           </fieldset>
 
           <div class="hero-cta">
-            <a href="#install" class="btn btn-primary">Get Started</a>
+            <a href="#install" class="btn btn-primary" data-i18n="hero.cta.getStarted">Get Started</a>
             <a href="https://github.com/anomalyco/opencode" class="btn btn-secondary" target="_blank"
-              rel="noopener noreferrer">View on GitHub</a>
+              rel="noopener noreferrer" data-i18n="hero.cta.viewGitHub">View on GitHub</a>
           </div>
         </div>
 
         <!-- Terminal animation area -->
-        <div class="hero-terminal" data-terminal aria-label="Terminal animation showing opencode in action">
+        <div class="hero-terminal" data-terminal aria-label="Terminal animation showing opencode in action"
+          data-i18n-aria="hero.terminalLabel">
           <div class="terminal-window">
             <div class="terminal-header" aria-hidden="true">
               <span class="terminal-dot terminal-dot--red"></span>
@@ -149,8 +170,8 @@
     <section class="features" aria-labelledby="features-heading">
       <div class="section-inner">
         <header class="section-header">
-          <h2 id="features-heading" class="section-heading">What is opencode</h2>
-          <p class="section-description">
+          <h2 id="features-heading" class="section-heading" data-i18n="features.heading">What is opencode</h2>
+          <p class="section-description" data-i18n="features.description">
             opencode is an open source AI coding agent available as a terminal interface,
             desktop app, or IDE extension. It gives you the power of modern LLMs directly
             in your development workflow — with no vendor lock-in and no data collection.
@@ -161,18 +182,18 @@
         </div>
 
         <!-- Stats bar -->
-        <ul class="stats-bar" aria-label="opencode community statistics">
+        <ul class="stats-bar" aria-label="opencode community statistics" data-i18n-aria="features.statsLabel">
           <li class="stat">
             <span class="stat-number">160K+</span>
-            <span class="stat-label">GitHub Stars</span>
+            <span class="stat-label" data-i18n="stat.stars">GitHub Stars</span>
           </li>
           <li class="stat">
             <span class="stat-number">900</span>
-            <span class="stat-label">Contributors</span>
+            <span class="stat-label" data-i18n="stat.contributors">Contributors</span>
           </li>
           <li class="stat">
             <span class="stat-number">7.5M</span>
-            <span class="stat-label">Monthly Developers</span>
+            <span class="stat-label" data-i18n="stat.developers">Monthly Developers</span>
           </li>
         </ul>
       </div>
@@ -184,14 +205,14 @@
     <section id="install" class="install" aria-labelledby="install-heading">
       <div class="section-inner">
         <header class="section-header">
-          <h2 id="install-heading" class="section-heading">Install in seconds</h2>
-          <p class="section-description">
+          <h2 id="install-heading" class="section-heading" data-i18n="install.heading">Install in seconds</h2>
+          <p class="section-description" data-i18n="install.description">
             One command and you're ready to go. Choose your preferred package manager.
           </p>
         </header>
 
         <div class="install-tabs">
-          <div role="tablist" aria-label="Installation methods">
+          <div role="tablist" aria-label="Installation methods" data-i18n-aria="install.tabsLabel">
             <button role="tab" id="tab-curl" class="install-tab" data-install-tab="curl" aria-selected="true"
               aria-controls="panel-curl" tabindex="0">curl</button>
             <button role="tab" id="tab-npm" class="install-tab" data-install-tab="npm" aria-selected="false"
@@ -207,8 +228,10 @@
         </div>
 
         <p class="install-note">
-          <strong>Windows users:</strong> WSL (Windows Subsystem for Linux) is recommended.
-          Also available via <code>pacman</code>, <code>choco</code>, <code>scoop</code>, and <code>docker</code>.
+          <strong data-i18n="install.note.strong">Windows users:</strong> <span data-i18n="install.note.text">WSL
+            (Windows Subsystem for Linux) is recommended.
+            Also available via</span> <code>pacman</code>, <code>choco</code>, <code>scoop</code>, <span
+            data-i18n="install.note.and">and</span> <code>docker</code>.
         </p>
       </div>
     </section>
@@ -219,33 +242,35 @@
     <section class="how-it-works" aria-labelledby="how-heading">
       <div class="section-inner">
         <header class="section-header">
-          <h2 id="how-heading" class="section-heading">How it works</h2>
-          <p class="section-description">
+          <h2 id="how-heading" class="section-heading" data-i18n="how.heading">How it works</h2>
+          <p class="section-description" data-i18n="how.description">
             From install to your first AI-assisted code change in four simple steps.
           </p>
         </header>
 
-        <ol class="steps-flow" id="steps-container" data-steps aria-label="Steps to get started with opencode"></ol>
+        <ol class="steps-flow" id="steps-container" data-steps aria-label="Steps to get started with opencode"
+          data-i18n-aria="how.stepsLabel"></ol>
 
         <!-- Key commands showcase -->
         <div class="commands-showcase">
-          <h3 class="commands-title">Key commands</h3>
+          <h3 class="commands-title" data-i18n="how.commands.title">Key commands</h3>
           <dl class="commands-list">
             <div class="command-item">
               <dt><kbd>/init</kbd></dt>
-              <dd>Analyze your project structure and generate context for the AI</dd>
+              <dd data-i18n="how.commands.init">Analyze your project structure and generate context for the AI</dd>
             </div>
             <div class="command-item">
               <dt><kbd>/share</kbd></dt>
-              <dd>Share your current session via a unique link</dd>
+              <dd data-i18n="how.commands.share">Share your current session via a unique link</dd>
             </div>
             <div class="command-item">
               <dt><kbd>/undo</kbd> / <kbd>/redo</kbd></dt>
-              <dd>Revert or reapply AI-generated changes instantly</dd>
+              <dd data-i18n="how.commands.undo">Revert or reapply AI-generated changes instantly</dd>
             </div>
             <div class="command-item">
               <dt><kbd>Tab</kbd></dt>
-              <dd>Switch between Plan mode (read-only analysis) and Build mode (full development)</dd>
+              <dd data-i18n="how.commands.tab">Switch between Plan mode (read-only analysis) and Build mode (full
+                development)</dd>
             </div>
           </dl>
         </div>
@@ -258,29 +283,34 @@
     <section class="plugins" aria-labelledby="plugins-heading">
       <div class="section-inner">
         <header class="section-header">
-          <h2 id="plugins-heading" class="section-heading">Extend with Plugins</h2>
+          <h2 id="plugins-heading" class="section-heading" data-i18n="plugins.heading">Extend with Plugins</h2>
           <p class="section-description">
-            Plugins let you hook into opencode events and customize behavior.
-            Ship them as local files in <code>.opencode/plugins/</code> or publish as npm packages.
+            <span data-i18n="plugins.description.part1">Plugins let you hook into opencode events and customize
+              behavior. Ship them as local files in</span> <code>.opencode/plugins/</code> <span
+              data-i18n="plugins.description.part2">or publish as npm packages.</span>
           </p>
         </header>
 
         <div class="plugins-content">
           <div class="plugins-info">
-            <h3 class="subsection-title">How plugins work</h3>
-            <p>
+            <h3 class="subsection-title" data-i18n="plugins.howTitle">How plugins work</h3>
+            <p data-i18n="plugins.howDescription">
               Each plugin exports handler functions for specific lifecycle events.
               opencode calls your handlers at the right time, giving you full control
               over tool execution, file operations, and shell behavior.
             </p>
 
-            <h4 class="event-types-title">Available event hooks</h4>
+            <h4 class="event-types-title" data-i18n="plugins.eventsTitle">Available event hooks</h4>
             <ul class="event-types-list">
-              <li><code>file.edited</code> — Triggered after a file is modified</li>
-              <li><code>session.idle</code> — When a session finishes processing</li>
-              <li><code>tool.execute.before</code> — Before any tool runs</li>
-              <li><code>tool.execute.after</code> — After any tool completes</li>
-              <li><code>shell.env</code> — Customize shell environment variables</li>
+              <li><code>file.edited</code> — <span data-i18n="plugins.event1">Triggered after a file is modified</span>
+              </li>
+              <li><code>session.idle</code> — <span data-i18n="plugins.event2">When a session finishes processing</span>
+              </li>
+              <li><code>tool.execute.before</code> — <span data-i18n="plugins.event3">Before any tool runs</span></li>
+              <li><code>tool.execute.after</code> — <span data-i18n="plugins.event4">After any tool completes</span>
+              </li>
+              <li><code>shell.env</code> — <span data-i18n="plugins.event5">Customize shell environment variables</span>
+              </li>
             </ul>
           </div>
 
@@ -315,29 +345,30 @@
     <section class="skills" aria-labelledby="skills-heading">
       <div class="section-inner">
         <header class="section-header">
-          <h2 id="skills-heading" class="section-heading">Agent Skills</h2>
+          <h2 id="skills-heading" class="section-heading" data-i18n="skills.heading">Agent Skills</h2>
           <p class="section-description">
-            Reusable instruction sets via <code>SKILL.md</code> files. Skills are discovered
-            automatically and loaded into agents on demand.
+            <span data-i18n="skills.description.part1">Reusable instruction sets via</span> <code>SKILL.md</code> <span
+              data-i18n="skills.description.part2">files. Skills are discovered automatically and loaded into agents on
+              demand.</span>
           </p>
         </header>
 
         <div class="skills-content">
           <div class="skills-info">
-            <h3 class="subsection-title">Skill locations</h3>
+            <h3 class="subsection-title" data-i18n="skills.locationsTitle">Skill locations</h3>
             <ul class="skills-locations">
               <li>
-                <strong>Project-level:</strong>
+                <strong data-i18n="skills.projectLevel">Project-level:</strong>
                 <code>.opencode/skills/&lt;name&gt;/SKILL.md</code>
               </li>
               <li>
-                <strong>Global:</strong>
+                <strong data-i18n="skills.global">Global:</strong>
                 <code>~/.config/opencode/skills/&lt;name&gt;/SKILL.md</code>
               </li>
             </ul>
 
-            <h3 class="subsection-title">Loading skills in agents</h3>
-            <p>
+            <h3 class="subsection-title" data-i18n="skills.loadingTitle">Loading skills in agents</h3>
+            <p data-i18n="skills.loadingDescription">
               Agents invoke skills by name using the <code>skill()</code> function:
             </p>
             <div class="code-block code-block--inline">
@@ -373,8 +404,8 @@ license: MIT
     <section class="subagents" aria-labelledby="subagents-heading">
       <div class="section-inner">
         <header class="section-header">
-          <h2 id="subagents-heading" class="section-heading">Sub-Agents</h2>
-          <p class="section-description">
+          <h2 id="subagents-heading" class="section-heading" data-i18n="subagents.heading">Sub-Agents</h2>
+          <p class="section-description" data-i18n="subagents.description">
             Specialized AI assistants for specific workflows. Primary agents handle
             your main session while sub-agents are dispatched for focused tasks.
           </p>
@@ -385,8 +416,8 @@ license: MIT
 
         <!-- Custom agent config -->
         <div class="subagents-custom">
-          <h3 class="subsection-title">Create custom agents</h3>
-          <p>
+          <h3 class="subsection-title" data-i18n="subagents.customTitle">Create custom agents</h3>
+          <p data-i18n="subagents.customDescription">
             Define your own agents using JSON configuration in <code>opencode.json</code>
             or as Markdown files with specialized instructions.
           </p>
@@ -416,8 +447,8 @@ license: MIT
     <section class="mcp" aria-labelledby="mcp-heading">
       <div class="section-inner">
         <header class="section-header">
-          <h2 id="mcp-heading" class="section-heading">MCP Servers</h2>
-          <p class="section-description">
+          <h2 id="mcp-heading" class="section-heading" data-i18n="mcp.heading">MCP Servers</h2>
+          <p class="section-description" data-i18n="mcp.description">
             Model Context Protocol lets you add external tools to opencode.
             Connect to local command-based servers or remote URL-based services.
             OAuth support is built in.
@@ -426,19 +457,21 @@ license: MIT
 
         <div class="mcp-content">
           <div class="mcp-info">
-            <h3 class="subsection-title">Server types</h3>
+            <h3 class="subsection-title" data-i18n="mcp.typesTitle">Server types</h3>
             <dl class="mcp-types">
               <div class="mcp-type">
-                <dt>Local</dt>
-                <dd>Command-based servers that run on your machine. Ideal for custom tools and integrations.</dd>
+                <dt data-i18n="mcp.typeLocal">Local</dt>
+                <dd data-i18n="mcp.typeLocalDescription">Command-based servers that run on your machine. Ideal for
+                  custom tools and integrations.</dd>
               </div>
               <div class="mcp-type">
-                <dt>Remote</dt>
-                <dd>URL-based servers hosted externally. Connect to managed services with built-in OAuth.</dd>
+                <dt data-i18n="mcp.typeRemote">Remote</dt>
+                <dd data-i18n="mcp.typeRemoteDescription">URL-based servers hosted externally. Connect to managed
+                  services with built-in OAuth.</dd>
               </div>
             </dl>
 
-            <h3 class="subsection-title">Popular MCP servers</h3>
+            <h3 class="subsection-title" data-i18n="mcp.popularTitle">Popular MCP servers</h3>
             <ul class="mcp-popular">
               <li><strong>Sentry</strong> — Error tracking and debugging</li>
               <li><strong>Context7</strong> — Up-to-date library documentation</li>
@@ -477,46 +510,47 @@ license: MIT
        ============================================ -->
   <footer class="site-footer">
     <div class="footer-inner">
-      <nav aria-label="Footer navigation">
+      <nav aria-label="Footer navigation" data-i18n-aria="footer.navLabel">
         <ul class="footer-links">
           <li><a href="https://github.com/anomalyco/opencode" class="footer-link" target="_blank"
-              rel="noopener noreferrer">GitHub</a></li>
-          <li><a href="https://opencode.ai/docs" class="footer-link" target="_blank" rel="noopener noreferrer">Docs</a>
+              rel="noopener noreferrer" data-i18n="nav.github">GitHub</a></li>
+          <li><a href="https://opencode.ai/docs" class="footer-link" target="_blank" rel="noopener noreferrer"
+              data-i18n="nav.docs">Docs</a>
           </li>
           <li><a href="https://github.com/anomalyco/opencode/releases" class="footer-link" target="_blank"
-              rel="noopener noreferrer">Changelog</a></li>
-          <li><a href="https://discord.gg/opencode" class="footer-link" target="_blank"
-              rel="noopener noreferrer">Discord</a></li>
+              rel="noopener noreferrer" data-i18n="footer.changelog">Changelog</a></li>
+          <li><a href="https://discord.gg/opencode" class="footer-link" target="_blank" rel="noopener noreferrer"
+              data-i18n="nav.discord">Discord</a></li>
         </ul>
       </nav>
 
       <p class="footer-credit">
-        Built with <svg width="16" height="16" viewBox="0 0 24 24" fill="#e74c3c" xmlns="http://www.w3.org/2000/svg"
-          aria-label="love" role="img">
+        <span data-i18n="footer.builtWith">Built with</span> <svg width="16" height="16" viewBox="0 0 24 24"
+          fill="#e74c3c" xmlns="http://www.w3.org/2000/svg" aria-label="love" role="img"
+          data-i18n-aria="footer.loveLabel">
           <path
             d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-        </svg> by the open source community
+        </svg> <span data-i18n="footer.byCommunity">by the open source community</span>
       </p>
 
       <p class="footer-copyright">
-        <small>&copy; <time datetime="2025">2025</time> opencode contributors. Released under the MIT License.</small>
+        <small>&copy; <time datetime="2025">2025</time> <span data-i18n="footer.copyright">opencode contributors.
+            Released under the MIT License.</span></small>
       </p>
     </div>
   </footer>
 
 
-  <!-- Structured Data: Organization -->
+  <!-- Structured Data: Person (Creator) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "opencode",
-    "url": "https://kikdras.github.io/opencode-tutorial-page/",
-    "description": "The open source AI coding agent with free models included. Terminal-native, LSP-enabled, 75+ LLM providers, and privacy-first.",
+    "@type": "Person",
+    "name": "KiKDraS",
+    "url": "https://github.com/KiKDraS",
+    "description": "Creator of the opencode tutorial project.",
     "sameAs": [
-      "https://github.com/anomalyco/opencode",
-      "https://opencode.ai/docs",
-      "https://discord.gg/opencode"
+      "https://github.com/KiKDraS"
     ]
   }
   </script>
@@ -530,8 +564,8 @@ license: MIT
     "url": "https://kikdras.github.io/opencode-tutorial-page/",
     "description": "opencode is the open source AI coding agent with free models included. Terminal-native, LSP-enabled, 75+ LLM providers, multi-session parallel agents, and privacy-first.",
     "publisher": {
-      "@type": "Organization",
-      "name": "opencode"
+      "@type": "Person",
+      "name": "KiKDraS"
     }
   }
   </script>
