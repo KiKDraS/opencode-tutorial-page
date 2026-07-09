@@ -4,15 +4,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>opencode — The Open Source AI Coding Agent</title>
+  <meta name="robots" content="index, follow, max-snippet:150, max-image-preview:large" />
+
+  <title>opencode — Open Source AI Coding Agent | Terminal & IDE</title>
   <meta name="description"
-    content="opencode is the open source AI coding agent. Free models included, 75+ LLM providers, LSP enabled, multi-session, and privacy first. 160K+ GitHub stars." />
+    content="Open source AI coding agent with free models. Terminal-native, LSP-enabled, 75+ LLM providers, multi-session agents, privacy-first. 160K+ GitHub stars." />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://kikdras.github.io/opencode-tutorial-page/" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="opencode — The Open Source AI Coding Agent" />
+  <meta property="og:title" content="opencode — Open Source AI Coding Agent | Terminal & IDE" />
   <meta property="og:description"
-    content="Free models included or connect any model. LSP enabled, multi-session, share links, and privacy first. 160K+ stars on GitHub." />
+    content="Open source AI coding agent with free models included. Terminal-native, LSP-enabled, 75+ LLM providers, multi-session, and privacy-first. 160K+ GitHub stars." />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kikdras.github.io/opencode-tutorial-page/" />
+  <meta property="og:site_name" content="opencode" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="opencode — The Open Source AI Coding Agent" />
+  <meta name="twitter:description"
+    content="Open source AI coding agent with free models included. Terminal-native, LSP-enabled, 75+ LLM providers, and privacy-first." />
 
   <!-- CSS Manifest -->
 
@@ -22,7 +36,7 @@
   <link rel="shortcut icon" href="/opencode-tutorial-page/favicon/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="/opencode-tutorial-page/favicon/apple-touch-icon.png" />
   <link rel="manifest" href="/opencode-tutorial-page/favicon/site.webmanifest" />
-  <script type="module" crossorigin src="/opencode-tutorial-page/assets/index-BNGJTzc0.js"></script>
+  <script type="module" crossorigin src="/opencode-tutorial-page/assets/index-D15aGVY1.js"></script>
   <link rel="stylesheet" crossorigin href="/opencode-tutorial-page/assets/index-C3GuvaVM.css">
 </head>
 
@@ -74,7 +88,7 @@
   <!-- ============================================
         MAIN CONTENT
         ============================================ -->
-  <main id="main-content" role="main">
+  <main id="main-content">
 
     <!-- ==========================================
          HERO SECTION
@@ -143,90 +157,7 @@
           </p>
         </header>
 
-        <div class="features-grid">
-          <!-- Feature 1: LSP Enabled -->
-          <article class="feature-card">
-            <header>
-              <div class="feature-icon" aria-hidden="true">
-                <span class="icon-lsp">&#x2699;</span>
-              </div>
-              <h3 class="feature-title">LSP Enabled</h3>
-            </header>
-            <p class="feature-description">
-              Automatically loads the right Language Server Protocols for the LLM,
-              giving it deep understanding of your codebase types, imports, and structure.
-            </p>
-          </article>
-
-          <!-- Feature 2: Multi-session -->
-          <article class="feature-card">
-            <header>
-              <div class="feature-icon" aria-hidden="true">
-                <span class="icon-multi">&#x29C9;</span>
-              </div>
-              <h3 class="feature-title">Multi-session</h3>
-            </header>
-            <p class="feature-description">
-              Start multiple agents in parallel on the same project. Work on different
-              features, bugs, or refactors simultaneously without context conflicts.
-            </p>
-          </article>
-
-          <!-- Feature 3: Share Links -->
-          <article class="feature-card">
-            <header>
-              <div class="feature-icon" aria-hidden="true">
-                <span class="icon-share">&#x2197;</span>
-              </div>
-              <h3 class="feature-title">Share Links</h3>
-            </header>
-            <p class="feature-description">
-              Share a link to any session for reference or to debug. Collaborate with
-              teammates by sharing exact AI conversation histories and code changes.
-            </p>
-          </article>
-
-          <!-- Feature 4: Any Model -->
-          <article class="feature-card">
-            <header>
-              <div class="feature-icon" aria-hidden="true">
-                <span class="icon-model">&#x2B22;</span>
-              </div>
-              <h3 class="feature-title">Any Model</h3>
-            </header>
-            <p class="feature-description">
-              75+ LLM providers including local models. Use Claude, GPT, Gemini, or
-              run your own. Free models included out of the box — no API key required.
-            </p>
-          </article>
-
-          <!-- Feature 5: Any Editor -->
-          <article class="feature-card">
-            <header>
-              <div class="feature-icon" aria-hidden="true">
-                <span class="icon-editor">&#x25A3;</span>
-              </div>
-              <h3 class="feature-title">Any Editor</h3>
-            </header>
-            <p class="feature-description">
-              Use opencode in the terminal, as a desktop app, or as an IDE extension.
-              Works with VS Code, JetBrains, Neovim, and more.
-            </p>
-          </article>
-
-          <!-- Feature 6: Privacy First -->
-          <article class="feature-card">
-            <header>
-              <div class="feature-icon" aria-hidden="true">
-                <span class="icon-privacy">&#x26BF;</span>
-              </div>
-              <h3 class="feature-title">Privacy First</h3>
-            </header>
-            <p class="feature-description">
-              No code or context data stored on external servers. Your codebase stays
-              on your machine. Full transparency with open source.
-            </p>
-          </article>
+        <div class="features-grid" data-features>
         </div>
 
         <!-- Stats bar -->
@@ -272,45 +203,7 @@
           </div>
 
           <!-- Tab panels -->
-          <article role="tabpanel" id="panel-curl" class="install-panel" data-install-panel="curl"
-            aria-labelledby="tab-curl">
-            <div class="code-block">
-              <pre><code class="language-bash"><span class="prompt-symbol" aria-hidden="true">$</span> curl -fsSL https://opencode.ai/install | bash</code></pre>
-              <button type="button" class="copy-btn" data-copy-btn aria-label="Copy curl install command">
-                <span class="copy-label">Copy</span>
-              </button>
-            </div>
-          </article>
-
-          <article role="tabpanel" id="panel-npm" class="install-panel" data-install-panel="npm"
-            aria-labelledby="tab-npm" hidden>
-            <div class="code-block">
-              <pre><code class="language-bash"><span class="prompt-symbol" aria-hidden="true">$</span> npm install -g opencode-ai</code></pre>
-              <button type="button" class="copy-btn" data-copy-btn aria-label="Copy npm install command">
-                <span class="copy-label">Copy</span>
-              </button>
-            </div>
-          </article>
-
-          <article role="tabpanel" id="panel-brew" class="install-panel" data-install-panel="brew"
-            aria-labelledby="tab-brew" hidden>
-            <div class="code-block">
-              <pre><code class="language-bash"><span class="prompt-symbol" aria-hidden="true">$</span> brew install anomalyco/tap/opencode</code></pre>
-              <button type="button" class="copy-btn" data-copy-btn aria-label="Copy brew install command">
-                <span class="copy-label">Copy</span>
-              </button>
-            </div>
-          </article>
-
-          <article role="tabpanel" id="panel-bun" class="install-panel" data-install-panel="bun"
-            aria-labelledby="tab-bun" hidden>
-            <div class="code-block">
-              <pre><code class="language-bash"><span class="prompt-symbol" aria-hidden="true">$</span> bun install -g opencode-ai</code></pre>
-              <button type="button" class="copy-btn" data-copy-btn aria-label="Copy bun install command">
-                <span class="copy-label">Copy</span>
-              </button>
-            </div>
-          </article>
+          <div id="install-panels-container" data-install-panels></div>
         </div>
 
         <p class="install-note">
@@ -332,38 +225,7 @@
           </p>
         </header>
 
-        <ol class="steps-flow" aria-label="Steps to get started with opencode">
-          <!-- Step 1 -->
-          <li class="step">
-            <div class="step-number" aria-hidden="true">01</div>
-            <h3 class="step-title">Install</h3>
-            <p class="step-description">One command, any platform. curl, npm, brew, bun — pick your flavor.</p>
-          </li>
-
-          <!-- Step 2 -->
-          <li class="step">
-            <div class="step-number" aria-hidden="true">02</div>
-            <h3 class="step-title">Configure</h3>
-            <p class="step-description">Connect your LLM provider or use the included free models with Zen.</p>
-          </li>
-
-          <!-- Step 3 -->
-          <li class="step">
-            <div class="step-number" aria-hidden="true">03</div>
-            <h3 class="step-title">Initialize</h3>
-            <p class="step-description">Run <code>/init</code> in your project. opencode generates an
-              <code>AGENTS.md</code> with project context.
-            </p>
-          </li>
-
-          <!-- Step 4 -->
-          <li class="step">
-            <div class="step-number" aria-hidden="true">04</div>
-            <h3 class="step-title">Code</h3>
-            <p class="step-description">Ask questions, add features, make changes. The AI understands your full
-              codebase.</p>
-          </li>
-        </ol>
+        <ol class="steps-flow" id="steps-container" data-steps aria-label="Steps to get started with opencode"></ol>
 
         <!-- Key commands showcase -->
         <div class="commands-showcase">
@@ -518,67 +380,7 @@ license: MIT
           </p>
         </header>
 
-        <div class="subagents-grid">
-          <!-- Primary Agents -->
-          <div class="subagents-group">
-            <h3 class="subagents-group-title">Primary Agents</h3>
-
-            <article class="subagent-card subagent-card--primary">
-              <span class="subagent-badge">Primary</span>
-              <h4 class="subagent-name">Build</h4>
-              <p class="subagent-description">
-                Full development agent with all tools enabled. Writes code, runs commands,
-                edits files, and executes your requests end-to-end.
-              </p>
-            </article>
-
-            <article class="subagent-card subagent-card--primary">
-              <span class="subagent-badge">Primary</span>
-              <h4 class="subagent-name">Plan</h4>
-              <p class="subagent-description">
-                Analysis and planning mode. Read-only access to explore the codebase,
-                identify issues, and propose solutions before building.
-              </p>
-            </article>
-          </div>
-
-          <!-- Subagents -->
-          <div class="subagents-group">
-            <h3 class="subagents-group-title">Subagents</h3>
-
-            <article class="subagent-card subagent-card--sub">
-              <header>
-                <span class="subagent-badge">Subagent</span>
-                <h4 class="subagent-name">General</h4>
-              </header>
-              <p class="subagent-description">
-                Multi-step research tasks. Gathers information across multiple
-                sources and synthesizes findings.
-              </p>
-            </article>
-
-            <article class="subagent-card subagent-card--sub">
-              <header>
-                <span class="subagent-badge">Subagent</span>
-                <h4 class="subagent-name">Explore</h4>
-              </header>
-              <p class="subagent-description">
-                Fast codebase exploration with read-only access. Traces call paths,
-                finds symbols, and maps architecture.
-              </p>
-            </article>
-
-            <article class="subagent-card subagent-card--sub">
-              <header>
-                <span class="subagent-badge">Subagent</span>
-                <h4 class="subagent-name">Scout</h4>
-              </header>
-              <p class="subagent-description">
-                External documentation and dependency research. Fetches docs,
-                checks APIs, and evaluates third-party packages.
-              </p>
-            </article>
-          </div>
+        <div class="subagents-grid" data-subagents>
         </div>
 
         <!-- Custom agent config -->
@@ -702,6 +504,37 @@ license: MIT
     </div>
   </footer>
 
+
+  <!-- Structured Data: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "opencode",
+    "url": "https://kikdras.github.io/opencode-tutorial-page/",
+    "description": "The open source AI coding agent with free models included. Terminal-native, LSP-enabled, 75+ LLM providers, and privacy-first.",
+    "sameAs": [
+      "https://github.com/anomalyco/opencode",
+      "https://opencode.ai/docs",
+      "https://discord.gg/opencode"
+    ]
+  }
+  </script>
+
+  <!-- Structured Data: WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "opencode",
+    "url": "https://kikdras.github.io/opencode-tutorial-page/",
+    "description": "opencode is the open source AI coding agent with free models included. Terminal-native, LSP-enabled, 75+ LLM providers, multi-session parallel agents, and privacy-first.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "opencode"
+    }
+  }
+  </script>
 </body>
 
 </html>

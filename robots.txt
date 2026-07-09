@@ -1,0 +1,5 @@
+# robots.txt for opencode landing page
+User-agent: *
+Allow: /
+
+Sitemap: https://kikdras.github.io/opencode-tutorial-page/sitemap.xml
